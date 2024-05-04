@@ -246,11 +246,44 @@ def home_page():
 
             
 
-    options = [
-        "Caterpillar",
-        "Locust     ",
-        "Grasshopper"
+    options = ["","Stemborer",
+                "leaf folders",
+                "Plant hoppers",
+                "mealy bugs",
+                "Gall midge"
+                "Caterpillar",
+                "Locust     ",
+                "Grasshopper",
+                "Wheat midges",
+                "Hessian fly",
+                " Thrips",
+                " Aphids", "Wireworms",
+                "Stem borers", 
+                "armyworms",
+                " grain moths",
+                "Corn earworms",
+                "Weevil",
+                "Leaf eating caterpillars",
+                "tea mosquito bag",
+                "thrips",
+                "Tea Totrix", 
+                "Tea Red spider mite",
+                "Whitefly",
+                "Aphids",
+                "Armyworms",
+                "Pink Bollworm",
+                "Boll Weevil" , 
+                "Stem borers",
+                "armyworms",
+                "grain moths" ,
+                "Leaf eating caterpillars",
+                "tea mosquito bag",
+                "thrips",
+                "Whitefly",
+                "Aphids", 
+                "Armyworms"
     ]
+
 
 
     drop = OptionMenu(home_frame,clicked, *options  , command=music)
@@ -527,10 +560,49 @@ def home_page():
 
     myLabel = Label(home_frame,text="Select the type of Insect "  , font=("arial",20,"bold"), bg = "#E1E8E2").place(x= 0 ,  y = 100)
 
-    insects = ["",
-        "Caterpillar",
-        "Locust     ",
-        "Grasshopper"
+    insects = ["","Stemborer",
+                "leaf folders",
+                "Plant hoppers",
+                "mealy bugs",
+                "Gall midge"
+                "Caterpillar",
+                "Locust     ",
+                "Grasshopper",
+                "Wheat midges",
+                "Hessian fly",
+                " Thrips",
+                " Aphids", "Wireworms",
+                "Stem borers", 
+                "armyworms",
+                " grain moths",
+                "Corn earworms",
+                "Weevil",
+                "Leaf eating caterpillars",
+                "tea mosquito bag",
+                "thrips",
+                "Tea Totrix", 
+                "Tea Red spider mite",
+                "Whitefly",
+                "Aphids",
+                "Armyworms",
+                "Pink Bollworm",
+                "Boll Weevil" , 
+                "Stem borers",
+                "armyworms",
+                "grain moths" ,
+                "Leaf eating caterpillars",
+                "tea mosquito bag",
+                "thrips",
+                "Whitefly",
+                "Aphids", 
+                "Armyworms"
+
+
+
+
+
+
+
     ]
 
     clicked_insect = StringVar()
@@ -538,7 +610,7 @@ def home_page():
             
 
 
-    drop = OptionMenu(home_frame,clicked_insect, *insects , command=music)
+    drop = OptionMenu(home_frame,clicked_insect, *insects)
     drop.config(width=45 , height = 2 )
     drop.place(x= 0 ,  y = 175)
 
@@ -559,7 +631,7 @@ def home_page():
     clicked_frequency.set(song_paths[1])
 
 
-    drop = OptionMenu(home_frame,clicked_frequency, *song_paths  , command=music)
+    drop = OptionMenu(home_frame,clicked_frequency, *song_paths  )
     drop.config(width=45 , height = 2 )
     drop.place(x= 550,  y = 175)
 
@@ -593,7 +665,7 @@ def home_page():
 
 
 
-    drop = OptionMenu(home_frame,clicked, *options  , command=music)
+    drop = OptionMenu(home_frame,clicked, *options  )
     drop.config(width=40 , height = 2 )
     drop.place(x= 0 ,  y = 375)
 
