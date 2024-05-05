@@ -59,6 +59,10 @@ def generate_response(user_input):
                 response = f"No crops found suitable for {temperature}°C temperature."
         else:
             response = "Sorry, I couldn't determine the temperature condition from your input."
+    elif user_input.lower() in ['hello','hi','namaste','yeoo']:
+        response = 'Hello user, How can i help you today? '
+    elif user_input.lower() in ['bye','Goodbye']:
+        response = 'Good Bye :)'
     else:
         response = ""
         info = get_info(user_input)
